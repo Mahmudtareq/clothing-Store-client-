@@ -1,91 +1,110 @@
+import { FileAxis3D, LocateOffIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900 overflow-x-hidden">
+    <footer className="bg-white dark:bg-gray-900 overflow-x-hidden mt-10 border-t shadow-md">
       <div className="mx-auto w-full max-w-screen-xl p-5 py-6 lg:py-8">
-        <div className="grid grid-cols-12 gap-8 sm:gap-6">
-          <div className="lg:col-span-4 col-span-12">
-            <Link href="https://flowbite.com/" className="flex items-center">
-              <Image
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="h-8"
-                alt="Flowbite Logo"
-                height={30}
-                width={30}
-              />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
-              </span>
-            </Link>
-          </div>
-          <div className="lg:col-span-2 col-span-6">
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Resources
+        <div className="grid grid-cols-10 gap-8 sm:gap-6">
+          <div className="lg:col-span-2 col-span-5">
+            <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
+              Trending Products
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a href="https://flowbite.com/" className="hover:underline">
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
                   Flowbite
-                </a>
+                </Link>
               </li>
-              <li>
-                <a href="https://tailwindcss.com/" className="hover:underline">
-                  Tailwind CSS
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="lg:col-span-2 col-span-6">
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Follow us
-            </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a
-                  href="https://github.com/themesberg/flowbite"
-                  className="hover:underline "
-                >
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://discord.gg/4eeurUVvTy"
-                  className="hover:underline"
-                >
-                  Discord
-                </a>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Flowbite
+                </Link>
               </li>
             </ul>
           </div>
-          <div className="lg:col-span-2 col-span-6">
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Legal
+          <div className="lg:col-span-2 col-span-5">
+            <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
+              Categories
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Privacy Policy
-                </a>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Mens
+                </Link>
               </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Terms &amp; Conditions
-                </a>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Womens
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Kids
+                </Link>
               </li>
             </ul>
           </div>
-          <div className="lg:col-span-2 col-span-6">
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Legal
+
+          <div className="lg:col-span-2 col-span-5">
+            <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
+              About Us
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Privacy Policy
-                </a>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Mens
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Womens
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Kids
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-2 col-span-5">
+            <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
+              Contact Us
+            </h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Mens
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Womens
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Kids
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-2 col-span-5">
+            <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
+              Customer Care
+            </h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <li className="mb-3">
+                <Link href="#" className="hover:underline flex items-center gap-2">
+                    <span className=""><PhoneCallIcon className="w-5 h-5"/> </span> 123-456-7898
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline flex items-center gap-2">
+                    <span className=""><MailIcon className="w-5 h-5"/> </span> tareq125@gmail.com
+                </Link>
               </li>
              
             </ul>

@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("", fontSans.variable)}>
+      <body className={cn(fontSans.variable)}>
         <NavbarHome />
         <main className="min-h-screen overflow-hidden">{children}</main>
         <FooterHome />

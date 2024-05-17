@@ -3,8 +3,14 @@ import React from "react";
 import { Button } from "../ui/button";
 import { ArrowRightFromLine } from "lucide-react";
 import FlaseSaleCard from "./FlaseSaleCard";
+import { getProductsMensData } from "@/data/mensProducts";
+import { TFlashSaleItem } from "@/types/ProductsTypes";
 
-const FlashSale = () => {
+const FlashSale = async () => {
+  const data: TFlashSaleItem[] = await getProductsMensData();
+  const MenWithFlashSale: TFlashSaleItem[] = data.filter(
+    (item) => item.flashSale === true
+  );
   return (
     <div className="mt-[3.5rem]">
       <div className="flex items-center justify-between my-5">
@@ -20,10 +26,9 @@ const FlashSale = () => {
         </Button>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
-        <FlaseSaleCard />
-        <FlaseSaleCard />
-        <FlaseSaleCard />
-        <FlaseSaleCard />
+        {MenWithFlashSale.slice(2,6).map((flashItem) => (
+          <FlaseSaleCard key={flashItem.id} flashItem={flashItem} />
+        ))}
       </div>
     </div>
   );

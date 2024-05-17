@@ -2,15 +2,21 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowRightFromLine } from "lucide-react";
 import PopularProductsCard from "./PopularProductsCard";
+import { getProductsMensData } from "@/data/mensProducts";
+import { TFlashSaleItem } from "@/types/ProductsTypes";
 
-const PopularProducts = () => {
+const PopularProducts = async () => {
+  const data: TFlashSaleItem[] = await getProductsMensData();
+  const mostPopular: TFlashSaleItem[] = data.filter(
+    (item) => item.rating >= 4.6
+  );
   return (
     <div className="mt-[3.5rem]">
       <div className="flex items-center justify-between flex-wrap">
         {" "}
         <div className="flex flex-col">
           <span className="lg:text-[32px] text-[#3D3D3D] text-[24px]">
-            Most Popular Products
+            Trending Products
           </span>
           <p className="my-3 lg:w-1/2 w-full">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -26,10 +32,9 @@ const PopularProducts = () => {
         </Button>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
-        <PopularProductsCard />
-        <PopularProductsCard />
-        <PopularProductsCard />
-        <PopularProductsCard />
+        {mostPopular.map((popularItem) => (
+          <PopularProductsCard key={popularItem.id} popularItem={popularItem} />
+        ))}
       </div>
     </div>
   );
