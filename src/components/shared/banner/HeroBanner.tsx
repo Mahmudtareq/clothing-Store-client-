@@ -4,13 +4,10 @@ import CarouselControls from "./CarouselControls";
 import CarouselIndicator from "./CarouselIndicator";
 import CarouselItem from "./CarouselItem";
 
-import banner1 from '../../../asserts/banner1.jpg'
-import banner2 from '../../../asserts/banner2.jpg'
-import banner3 from '../../../asserts/banner3.jpg'
-import banner4 from '../../../asserts/banner4.jpg'
+
 interface CarouselItemProps {
   item: {
-    src: string;
+    src: string | null;
     alt: string;
     title: string;
     description: string;
@@ -25,7 +22,7 @@ const HeroBanner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
     {
-      src: banner1,
+      src: "https://i.ibb.co/XDvxd7H/banner1.jpg",
       alt: "image",
       title: "Special Offer",
       description: "Shop now and get up to 50% off!",
@@ -34,7 +31,7 @@ const HeroBanner = () => {
       offerText: "Limited time offer",
     },
     {
-      src: banner2,
+      src: "https://i.ibb.co/wCr2mph/banner2.jpg",
       alt: "image hello",
       title: "New Arrivals",
       description: "Discover the latest trends!",
@@ -43,7 +40,7 @@ const HeroBanner = () => {
       offerText: "Be the first to shop",
     },
     {
-      src: banner3,
+      src: "https://i.ibb.co/Cnf0jQN/banner3.jpg",
       alt: "shop image",
       title: "Seasonal Collection",
       description: "Explore our latest seasonal collection!",
@@ -52,7 +49,7 @@ const HeroBanner = () => {
       offerText: "Shop now while stocks last",
     },
     {
-      src: banner4,
+      src: "https://i.ibb.co/gFNch8x/banner4.jpg",
       alt: "image mens",
       title: "Flash Sale",
       description: "Hurry! Limited-time flash sale!",
@@ -61,7 +58,6 @@ const HeroBanner = () => {
       offerText: "Don't miss out on amazing deals",
     },
   ];
-
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
@@ -85,7 +81,7 @@ const HeroBanner = () => {
           {items.map((item, index) => (
             <CarouselItem
               key={index}
-              item = {item}
+              item={item}
               isActive={index === activeIndex}
             />
           ))}

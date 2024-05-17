@@ -20,13 +20,13 @@ const FlashSale = async () => {
         </span>
         <Button className="rounded-full  hover:underline cursor-pointer">
           <span className="flex items-center gap-2">
-            <Link href="#">View All</Link>{" "}
+            <Link href="/flash-sale">View All</Link>{" "}
             <ArrowRightFromLine className="w-5 h-5" />
           </span>
         </Button>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
-        {MenWithFlashSale.slice(2,6).map((flashItem) => (
+        {MenWithFlashSale.slice(2, 6).map((flashItem) => (
           <FlaseSaleCard key={flashItem.id} flashItem={flashItem} />
         ))}
       </div>
