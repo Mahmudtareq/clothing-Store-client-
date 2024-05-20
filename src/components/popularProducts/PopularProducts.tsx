@@ -4,10 +4,12 @@ import { ArrowRightFromLine } from "lucide-react";
 import PopularProductsCard from "./PopularProductsCard";
 import { getProductsMensData } from "@/data/mensProducts";
 import { TFlashSaleItem } from "@/types/ProductsTypes";
+import { getAllProductsData } from "@/utils/products";
 
 const PopularProducts = async () => {
-  const data: TFlashSaleItem[] = await getProductsMensData();
-  const mostPopular: TFlashSaleItem[] = data.filter(
+  // const data: TFlashSaleItem[] = await getProductsMensData();
+  const products: TFlashSaleItem[] = await getAllProductsData();
+  const mostPopular: TFlashSaleItem[] = products.filter(
     (item) => item.rating >= 4.6
   );
   return (
@@ -26,14 +28,17 @@ const PopularProducts = async () => {
         </div>
         <Button className="rounded-full  hover:underline cursor-pointer">
           <span className="flex items-center gap-2">
-            <Link href="#">View All</Link>{" "}
+            <Link href="/products">View All</Link>{" "}
             <ArrowRightFromLine className="w-5 h-5" />
           </span>
         </Button>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
-        {mostPopular.map((popularItem) => (
-          <PopularProductsCard key={popularItem.id} popularItem={popularItem} />
+        {mostPopular.slice(1, 9).map((popularItem) => (
+          <PopularProductsCard
+            key={popularItem._id}
+            popularItem={popularItem}
+          />
         ))}
       </div>
     </div>

@@ -1,0 +1,806 @@
+[
+  {
+    "name": "Men Printed Round",
+    "subcategory": "Activewear",
+    "price": 25,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Black", "White", "Gray"],
+    "brand": "Nike",
+    "gender": "Men",
+    "rating": 4.7,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Breathable and comfortable activewear t-shirt.",
+    "images": "https://i.ibb.co/9qpbmQ5/xxl-strip-t-shirt-fionaa-trendz-original-imagmjyt8hypnvyt2.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "John Doe",
+        "rating": 5,
+        "comment": "Great for workouts!"
+      }
+    ],
+    "createdAt": "2024-01-15T09:00:00Z"
+  },
+  {
+  
+    "name": "Men Pink T-Shirt",
+    "subcategory": "Training Apparel",
+    "price": 30,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Black", "Blue"],
+    "brand": "Nike",
+    "gender": "Men",
+    "rating": 4.3,
+    "new": false,
+    "flashSale": true,
+    "flashSalePercentage": 15,
+    "description": "High-performance compression shorts for training.Colorblock Round Neck Cotton Blend White",
+    "images": "https://i.ibb.co/fSsNS46/xxl-strip-t-shirt-fionaa-trendz-original-imagmjyt8hypnvyt.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Jane Smith",
+        "rating": 4,
+        "comment": "Comfortable but runs small."
+      }
+    ],
+    "createdAt": "2024-02-01T09:00:00Z"
+  },
+  {
+   
+    "name": "Women Regular Fit Palazzos",
+    "subcategory": "Outerwear",
+    "price": 80,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Red", "Black", "White"],
+    "brand": "Nike",
+    "gender": "Women",
+    "rating": 4.6,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Lightweight and versatile jacket for windy conditions.",
+    "images": "https://i.ibb.co/RNSr4X6/O1-CN01-A70ns-M1-JEfl-Sw82so-6000000000997-0-tps-240-240.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Anna Taylor",
+        "rating": 5,
+        "comment": "Perfect for running in windy weather!"
+      }
+    ],
+    "createdAt": "2024-01-25T09:00:00Z"
+  },
+  {
+  
+    "name": "Men Regular Fit Formal Shirt",
+    "subcategory": "Training Apparel",
+    "price": 65,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Black", "Gray"],
+    "brand": "Nike",
+    "gender": "Men",
+    "rating": 4.5,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Men Regular Fit Solid Spread Collar Formal Shirt for.",
+    "images": "https://i.ibb.co/Bs7gsNw/xxl-mt-formal-shirt-metronaut-original-imagwk4z7vdhdwch.webp",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Mark Green",
+        "rating": 4,
+        "comment": "Keeps me warm during winter workouts."
+      }
+    ],
+    "createdAt": "2024-02-10T09:00:00Z"
+  },
+  {
+  
+    "name": "Embellished Semi Stitched Rajasthani Poshak  (Pink)",
+    "subcategory": "Activewear",
+    "price": 55,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Gray", "Black"],
+    "brand": "Nike",
+    "gender": "Women",
+    "rating": 4.4,
+    "new": false,
+    "flashSale": true,
+    "flashSalePercentage": 20,
+    "description": "Cozy fleece hoodie for everyday wear.",
+    "images": "https://i.ibb.co/XXPPJQC/41fcc51a7b347db3d7bb0fe2b08993b9.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Emily Johnson",
+        "rating": 4,
+        "comment": "Very comfortable and warm."
+      }
+    ],
+    "createdAt": "2024-01-20T09:00:00Z"
+  },
+  {
+    "name": "Youth Training Tee",
+    "subcategory": "Kids",
+    "price": 20,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Blue", "White"],
+    "brand": "Nike",
+    "gender": "Kids",
+    "rating": 4.8,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Comfortable training tee for active kids.",
+    "images": "https://i.ibb.co/Xy6tYZW/1-2-years-trm-ttp-123-trampoline-original-imagufh63zsuyda42.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Sarah White",
+        "rating": 5,
+        "comment": "Perfect for my son's soccer practice."
+      }
+    ],
+    "createdAt": "2024-03-01T09:00:00Z"
+  },
+  {
+    "name": "Slim Fit Shirt",
+    "subcategory": "Formal Wear",
+    "price": 60,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Black", "Navy"],
+    "brand": "H&M",
+    "gender": "Men",
+    "rating": 4.6,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Stylish slim fit blazer perfect for formal occasions.",
+    "images": "https://i.ibb.co/Bs7gsNw/xxl-mt-formal-shirt-metronaut-original-imagwk4z7vdhdwch.webp",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Michael Brown",
+        "rating": 5,
+        "comment": "Fits perfectly and looks great!"
+      }
+    ],
+    "createdAt": "2024-03-01T09:00:00Z"
+  },
+  {
+    "name": "Women Printed, Kurta  (Pink, Beige)",
+    "subcategory": "Denim",
+    "price": 40,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Blue", "Black"],
+    "brand": "H&M",
+    "gender": "Women",
+    "rating": 4.2,
+    "new": false,
+    "flashSale": true,
+    "flashSalePercentage": 20,
+    "description": "Comfortable and stylish Women Printed, Embroidered Viscose Rayon Flared Kurta  (Pink, Beige).",
+    "images": "https://i.ibb.co/DGHdVms/na-l-full-sleeve-stitched-2059-ab-black-scissor-na-original-imagqd2cdaf4vyr6.webp",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Sara White",
+        "rating": 4,
+        "comment": "Good fit but color fades slightly after washing."
+      }
+    ],
+    "createdAt": "2024-01-20T09:00:00Z"
+  },
+  {
+    "name": "Linen Shirt",
+    "subcategory": "Casual Wear",
+    "price": 35,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["White", "Beige"],
+    "brand": "H&M",
+    "gender": "Men",
+    "rating": 4.3,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Lightweight and breathable linen shirt.",
+    "images": "https://i.ibb.co/HTnXL3Q/xxl-men-regular-slim-fit-solid-button-down-collar-formal-shirt-original-imaggvvnywmgthyq.webp",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "David Miller",
+        "rating": 4,
+        "comment": "Very comfortable, perfect for summer."
+      }
+    ],
+    "createdAt": "2024-02-15T09:00:00Z"
+  },
+  {
+    "name": "Floral Print Bollywood Lycra Blend Saree (Maroon)",
+    "subcategory": "Knitwear",
+    "price": 45,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Gray", "Navy"],
+    "brand": "H&M",
+    "gender": "Women",
+    "rating": 4.4,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Floral Print Bollywood Lycra Blend Saree  (Maroon).",
+    "images": "https://i.ibb.co/1Xv5nWV/815c0a84691372b7ac254021b0fd862f.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Jessica Brown",
+        "rating": 4,
+        "comment": "Very warm and soft."
+      }
+    ],
+    "createdAt": "2024-03-10T09:00:00Z"
+  },
+  {
+    "name": "Boys' Graphic Tee",
+    "subcategory": "Kids",
+    "price": 15,
+    "currency": "USD",
+    "size": ["XS", "S", "M", "L"],
+    "color": ["Blue", "Red"],
+    "brand": "H&M",
+    "gender": "Kids",
+    "rating": 4.6,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Fun graphic tee for boys.",
+    "images": "https://i.ibb.co/Lpq0wKZ/1a79031b2ea2d48df1fb542ae2ecd1b6-jpg-300x0q75.webp",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Karen Adams",
+        "rating": 5,
+        "comment": "My son loves the design!"
+      }
+    ],
+    "createdAt": "2024-04-05T09:00:00Z"
+  },
+  {
+    "name": "Girls' Denim Jacket",
+    "subcategory": "Kids",
+    "price": 30,
+    "currency": "USD",
+    "size": ["XS", "S", "M", "L"],
+    "color": ["Blue"],
+    "brand": "H&M",
+    "gender": "Kids",
+    "rating": 4.7,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Stylish denim jacket for girls.",
+    "images": "https://i.ibb.co/qkMDmDm/3-6-months-10015-onion-cutopies-original-imagqe36s3xkmy88.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Lisa Clark",
+        "rating": 5,
+        "comment": "Adorable and well-made."
+      }
+    ],
+    "createdAt": "2024-03-20T09:00:00Z"
+  },
+  {
+    "name": "Women Printed Kurta",
+    "subcategory": "Dresses",
+    "price": 70,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Red", "Black", "Floral"],
+    "brand": "Zara",
+    "gender": "Women",
+    "rating": 4.8,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Elegant midi dress with a beautiful print.Women Printed Viscose Rayon Anarkali Kurta With Attached Dupatta  (Dark Blue) Special price",
+    "images": "https://i.ibb.co/QQ7fXQ3/a1a1644591f48fe6da4ea954f221103e-jpg-300x0q75.webp",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Emma Wilson",
+        "rating": 5,
+        "comment": "Absolutely love this dress!"
+      }
+    ],
+    "createdAt": "2024-02-10T09:00:00Z"
+  },
+  {
+    "name": "Pack of 2 Men Print T-Shirt",
+    "subcategory": "Blazers",
+    "price": 120,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Black", "Gray"],
+    "brand": "Zara",
+    "gender": "Men",
+    "rating": 4.7,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Modern double-breasted Pack of 2 Men Printed Round Neck Polyester Grey, Dark Green T-Shirt",
+    "images": "https://i.ibb.co/88fdcb4/m-tsrt-catalog-03-kajaru-original-imagqvztyggxhg9g2.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Sophia Davis",
+        "rating": 5,
+        "comment": "Perfect fit and very stylish."
+      }
+    ],
+    "createdAt": "2024-03-15T09:00:00Z"
+  },
+  {
+    "name": "Women Viscose Rayon Kurta Pant Dupatta Set",
+    "subcategory": "Pants",
+    "price": 60,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Black", "Beige"],
+    "brand": "Zara",
+    "gender": "Women",
+    "rating": 4.6,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Chic Women Viscose Rayon Kurta Pant Dupatta Set for a modern look.",
+    "images": "https://i.ibb.co/8YM3xpY/c2bb51e4008ad2f9219cba71740de6db.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Olivia Thomas",
+        "rating": 5,
+        "comment": "Very flattering and comfortable."
+      }
+    ],
+    "createdAt": "2024-04-01T09:00:00Z"
+  },
+  {
+    "name": "Boys' Chino Shorts",
+    "subcategory": "Kids",
+    "price": 25,
+    "currency": "USD",
+    "size": ["XS", "S", "M", "L"],
+    "color": ["Khaki", "Navy"],
+    "brand": "Zara",
+    "gender": "Kids",
+    "rating": 4.5,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Smart chino shorts for boys.",
+    "images": "https://i.ibb.co/hLJRRV4/3xl-4637a-austivo-original-imagzht7hypp6rht.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Amanda Lee",
+        "rating": 4,
+        "comment": "Good quality, perfect for summer."
+      }
+    ],
+    "createdAt": "2024-03-25T09:00:00Z"
+  },
+  {
+    "name": "Girls' Floral Dress",
+    "subcategory": "Kids",
+    "price": 35,
+    "currency": "USD",
+    "size": ["XS", "S", "M", "L"],
+    "color": ["Pink", "Yellow"],
+    "brand": "Zara",
+    "gender": "Kids",
+    "rating": 4.7,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Beautiful floral dress for girls.",
+    "images": "https://i.ibb.co/9bFcSXD/4xl-db1024-3bros-original-imagt7byhhrqdkym.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Evelyn Harris",
+        "rating": 5,
+        "comment": "My daughter loves it!"
+      }
+    ],
+    "createdAt": "2024-04-10T09:00:00Z"
+  },
+  {
+    "name": "Women Floral Print Kurta",
+    "subcategory": "Knitwear",
+    "price": 1200,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Red", "Green"],
+    "brand": "Gucci",
+    "gender": "Women",
+    "rating": 4.9,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Luxury wool cardigan with intricate embroidery.Women Floral Print Viscose Rayon Anarkali Kurta  (Black)",
+    "images": "https://i.ibb.co/ySN3yYR/free-half-sleeve-new-designer-lehengas-embroidred-lehenga-legha-original-imaghk9vhxmnw56w.webp",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Isabella Gonzalez",
+        "rating": 5,
+        "comment": "Exquisite craftsmanship and very cozy."
+      }
+    ],
+    "createdAt": "2024-04-01T09:00:00Z"
+  },
+  {
+    "name": "Pack of 2 Men  Maroon T-Shirt",
+    "subcategory": "Outerwear",
+    "price": 2500,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Blue"],
+    "brand": "Gucci",
+    "gender": "Men",
+    "rating": 4.8,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Premium denim jacket with GG Marmont detailing.Pack of 2 Men Graphic Print Round Neck Cotton Blend Black, Maroon T-Shirt",
+    "images": "https://i.ibb.co/P5DRHSf/m-201-mayur-clothing-original-imagnjz5qqezhpyu2.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Mia Robinson",
+        "rating": 5,
+        "comment": "Worth every penny, truly luxurious."
+      }
+    ],
+    "createdAt": "2024-03-20T09:00:00Z"
+  },
+  {
+    "name": "Men's T-Shirts",
+    "subcategory": "Accessories",
+    "price": 450,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Black", "Brown"],
+    "brand": "Gucci",
+    "gender": "Men",
+    "rating": 4.7,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Classic leather belt with iconic GG buckle.",
+    "images": "https://i.ibb.co/sbCdxWg/s-2275369-roadster-original-imafa7cagsnk9akx4.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Liam Carter",
+        "rating": 5,
+        "comment": "Excellent quality, very stylish."
+      }
+    ],
+    "createdAt": "2024-04-05T09:00:00Z"
+  },
+  {
+    "name": "Kids' GG Track Jacket",
+    "subcategory": "Kids",
+    "price": 900,
+    "currency": "USD",
+    "size": ["XS", "S", "M"],
+    "color": ["Red", "Blue"],
+    "brand": "Gucci",
+    "gender": "Kids",
+    "rating": 4.8,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Stylish track jacket with GG detailing for kids.",
+    "images": "https://i.ibb.co/NZfKbWY/5-6-years-hft-3hs23-csg-sa-na3-hellcat-original-imagnzctsn6v6e6f.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Grace Anderson",
+        "rating": 5,
+        "comment": "My son loves it, very fashionable."
+      }
+    ],
+    "createdAt": "2024-04-10T09:00:00Z"
+  },
+  {
+    "name": "Kid's Silk Scarf",
+    "subcategory": "Accessories",
+    "price": 750,
+    "currency": "USD",
+    "size": ["One Size"],
+    "color": ["Pink", "Beige"],
+    "brand": "Gucci",
+    "gender": "Kids",
+    "rating": 4.9,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Luxurious silk scarf with GG pattern.",
+    "images": "https://i.ibb.co/m5bq8GC/9-12-months-2pcs-lupnet-pyjama-9-12-grey-red-toddylon-original-imagx6ghexecfueq.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Sophia Martin",
+        "rating": 5,
+        "comment": "Beautiful and elegant."
+      }
+    ],
+    "createdAt": "2024-04-15T09:00:00Z"
+  },
+  {
+    "name": "Classic Polo Shirt",
+    "subcategory": "Casual Wear",
+    "price": 85,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["White", "Black"],
+    "brand": "Ralph Lauren",
+    "gender": "Men",
+    "rating": 4.7,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Timeless polo shirt made from premium cotton.",
+    "images": "https://i.ibb.co/XJmjdcd/m-pckpsrgpr90102-peter-england-original-imagztcen7eg7ygb2.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Jack Wilson",
+        "rating": 5,
+        "comment": "High quality and very comfortable."
+      }
+    ],
+    "createdAt": "2024-02-01T09:00:00Z"
+  },
+  {
+    "name": "Boys' Striped T-Shirts",
+    "subcategory": "Kids",
+    "price": 60,
+    "currency": "USD",
+    "size": ["XS", "S", "M", "L"],
+    "color": ["Blue", "Gray"],
+    "brand": "Ralph Lauren",
+    "gender": "Kids",
+    "rating": 4.6,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Soft and cozy striped sweater for boys.",
+    "images": "https://i.ibb.co/Qkh60Sh/s-504-501-combo-london-hills-original-imag4ztgzfxnmjcx4.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Linda Brown",
+        "rating": 4,
+        "comment": "Good quality, fits well."
+      }
+    ],
+    "createdAt": "2024-03-05T09:00:00Z"
+  },
+  {
+    "name": "Kids V-Neck Sweater",
+    "subcategory": "Knitwear",
+    "price": 200,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Gray", "Black"],
+    "brand": "Ralph Lauren",
+    "gender": "Kids",
+    "rating": 4.8,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Luxurious cashmere sweater with a V-neck.",
+    "images": "https://i.ibb.co/rvFtqT1/6-7-years-sy30-p2-9-12months-faiqa-original-imagpftxfg37qfmk2.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Ava Jones",
+        "rating": 5,
+        "comment": "So soft and warm, love it!"
+      }
+    ],
+    "createdAt": "2024-04-01T09:00:00Z"
+  },
+  {
+    "name": "Boys Full Sleeve Printed, Color Block Hooded Sweatshirt",
+    "subcategory": "Denim",
+    "price": 90,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["Blue"],
+    "brand": "Ralph Lauren",
+    "gender": "Men",
+    "rating": 4.5,
+    "new": false,
+    "flashSale": true,
+    "flashSalePercentage": 15,
+    "description": "Classic denim skirt with a modern twist.Boys Full Sleeve Printed, Color Block Hooded Sweatshirt",
+    "images": "https://i.ibb.co/9nSG0Qs/7-8-years-kid-hd-swtshrt-sblue-nvy-being-wanted-original-imagsx7dgfgwtmsm2.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Emily Clark",
+        "rating": 4,
+        "comment": "Stylish and fits well."
+      }
+    ],
+    "createdAt": "2024-03-20T09:00:00Z"
+  },
+  {
+    "name": "Boys' Polo Shirt",
+    "subcategory": "Kids",
+    "price": 40,
+    "currency": "USD",
+    "size": ["XS", "S", "M", "L"],
+    "color": ["Blue", "Red"],
+    "brand": "Ralph Lauren",
+    "gender": "Kids",
+    "rating": 4.6,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Comfortable polo shirt for boys.",
+    "images": "https://i.ibb.co/ww71ZjG/xxl-tsrt-catalog-03-kajaru-original-imagprym5gyz3jxh.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Chris Hall",
+        "rating": 4,
+        "comment": "Great quality, my son loves it."
+      }
+    ],
+    "createdAt": "2024-03-15T09:00:00Z"
+  },
+  {
+    "name": "Men's Cargo Pants",
+    "subcategory": "Casual Wear",
+    "price": 120,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Khaki", "Black", "Green"],
+    "brand": "Ralph Lauren",
+    "gender": "Men",
+    "rating": 4.5,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Versatile cargo pants with ample pockets for everyday wear.",
+    "images": "https://i.ibb.co/NNP6dYB/m-db1024-15-3bros-original-imagz8zjfxthf7kn2.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Daniel Smith",
+        "rating": 4,
+        "comment": "Great quality, very comfortable."
+      }
+    ],
+    "createdAt": "2024-03-10T09:00:00Z"
+  },
+  {
+    "name": "Women's Cable-Knit Sweater",
+    "subcategory": "Knitwear",
+    "price": 150,
+    "currency": "USD",
+    "size": ["S", "M", "L"],
+    "color": ["White", "Navy"],
+    "brand": "Ralph Lauren",
+    "gender": "Women",
+    "rating": 4.6,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Classic cable-knit sweater with a cozy feel.",
+    "images": "https://i.ibb.co/ww71ZjG/xxl-tsrt-catalog-03-kajaru-original-imagprym5gyz3jxh.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Emma Brown",
+        "rating": 5,
+        "comment": "Beautiful sweater, very warm."
+      }
+    ],
+    "createdAt": "2024-02-20T09:00:00Z"
+  },
+  {
+    "name": "Men's Plaid Shirt",
+    "subcategory": "Casual Wear",
+    "price": 90,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Red", "Blue"],
+    "brand": "Ralph Lauren",
+    "gender": "Men",
+    "rating": 4.4,
+    "new": true,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Stylish plaid shirt perfect for a casual look.",
+    "images": "https://i.ibb.co/HD7BbGJ/9-10-years-hft-23hr3-ty-bl-blg-hellcat-original-imagn9wchxdspffz.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Noah Johnson",
+        "rating": 4,
+        "comment": "Great quality fabric, very comfortable."
+      }
+    ],
+    "createdAt": "2024-04-05T09:00:00Z"
+  },
+  {
+    "name": "Boys' Hooded Jacket",
+    "subcategory": "Outerwear",
+    "price": 80,
+    "currency": "USD",
+    "size": ["XS", "S", "M", "L"],
+    "color": ["Black", "Gray"],
+    "brand": "Ralph Lauren",
+    "gender": "Kids",
+    "rating": 4.7,
+    "new": false,
+    "flashSale": false,
+    "flashSalePercentage": 0,
+    "description": "Warm hooded jacket for boys.",
+    "images": "https://i.ibb.co/HpDKm66/5-6-years-hft-23hr3-on-pe-ics-hellcat-original-imagn9wcf7tzzx8p.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "James White",
+        "rating": 5,
+        "comment": "Great for cold weather, my son loves it."
+      }
+    ],
+    "createdAt": "2024-03-15T09:00:00Z"
+  },
+  {
+    "name": "Men's Crewneck Sweatshirt",
+    "subcategory": "Activewear",
+    "price": 80,
+    "currency": "USD",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Gray", "Black"],
+    "brand": "Ralph Lauren",
+    "gender": "Men",
+    "rating": 4.5,
+    "new": false,
+    "flashSale": true,
+    "flashSalePercentage": 10,
+    "description": "Comfortable crewneck sweatshirt for everyday wear.",
+    "images": "https://i.ibb.co/1MQgLHB/9-10-years-hft-23hr3-pe-ics-br-hellcat-original-imagn9wcvmrpbjdz.jpg",
+    "inStock": true,
+    "reviews": [
+      {
+        "reviewer": "Ryan Wilson",
+        "rating": 4,
+        "comment": "Nice and soft fabric, fits well."
+      }
+    ],
+    "createdAt": "2024-02-25T09:00:00Z"
+  }
+]

@@ -2,10 +2,12 @@
 import FlaseSaleCard from "@/components/flashSale/FlaseSaleCard";
 import { getProductsMensData } from "@/data/mensProducts";
 import { TFlashSaleItem } from "@/types/ProductsTypes";
+import { getAllProductsData } from "@/utils/products";
 
 const FlashSaleHome = async () => {
-  const data: TFlashSaleItem[] = await getProductsMensData();
-  const MenWithFlashSale: TFlashSaleItem[] = data.filter(
+  // const data: TFlashSaleItem[] = await getProductsMensData();
+   const products: TFlashSaleItem[] = await getAllProductsData();
+  const MenWithFlashSale: TFlashSaleItem[] = products.filter(
     (item) => item.flashSale === true
   );
   let totalItem = MenWithFlashSale.length;
@@ -35,7 +37,7 @@ const FlashSaleHome = async () => {
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
         {MenWithFlashSale.map((flashItem) => (
-          <FlaseSaleCard key={flashItem.id} flashItem={flashItem} />
+          <FlaseSaleCard key={flashItem._id} flashItem={flashItem} />
         ))}
       </div>
     </div>

@@ -1,5 +1,5 @@
 export type TFlashSaleItem = {
-  id: number;
+  _id: number;
   name: string;
   subcategory: string;
   price: number;
@@ -12,7 +12,7 @@ export type TFlashSaleItem = {
   flashSale: boolean;
   flashSalePercentage: number;
   description: string;
-  images: string[];
+  images: string;
   inStock: boolean;
   reviews: {
     reviewer: string;

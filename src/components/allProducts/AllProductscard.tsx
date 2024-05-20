@@ -1,14 +1,24 @@
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 import image from "../../../public/apple.png";
 import { TFlashSaleItem } from "@/types/ProductsTypes";
-import React from "react";
-import Link from "next/link";
+import { Badge } from "../ui/badge";
 interface FlaseSaleCardProps {
-  flashItem: TFlashSaleItem;
+  allItems: TFlashSaleItem;
 }
 
-const FlaseSaleCard: React.FC<FlaseSaleCardProps> = ({ flashItem }) => {
-  const { name, price, flashSalePercentage, rating, _id, images } = flashItem;
+const AllProductscard: React.FC<FlaseSaleCardProps> = ({ allItems }) => {
+  const {
+    name,
+    price,
+    flashSalePercentage,
+    rating,
+    images,
+    _id,
+    flashSale,
+    new: isNew,
+  } = allItems;
   return (
     <div>
       <div className="w-full lg:h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative">
@@ -21,17 +31,32 @@ const FlaseSaleCard: React.FC<FlaseSaleCardProps> = ({ flashItem }) => {
             height={250}
           />
         </Link>
-
-        <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-full">
-          {flashSalePercentage}% off
-        </span>
+        <div>
+          {flashSale ? (
+            <Badge
+              variant="destructive"
+              className="absolute top-2 left-2 text-sm"
+            >
+              {" "}
+              {flashSalePercentage}% off
+            </Badge>
+          ) : isNew ? (
+            <Badge
+              variant="secondary"
+              className="absolute top-2 left-2 text-sm"
+            >
+              {" "}
+              New
+            </Badge>
+          ) : null}
+        </div>
         <div className="px-5 pb-5">
           <a href="#">
             <h5 className="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
               {name}
             </h5>
           </a>
-          <div className="flex items-center mt-2.5 mb-2">
+          <div className="flex items-center mt-2.5 mb-5">
             <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ">
               {rating}
             </span>
@@ -41,8 +66,8 @@ const FlaseSaleCard: React.FC<FlaseSaleCardProps> = ({ flashItem }) => {
               ${price}
             </span>
             <Link
-              href={`flash-sale/${_id}`}
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              href={`products/${_id}`}
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Details
             </Link>
@@ -53,4 +78,4 @@ const FlaseSaleCard: React.FC<FlaseSaleCardProps> = ({ flashItem }) => {
   );
 };
 
-export default FlaseSaleCard;
+export default AllProductscard;

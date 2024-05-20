@@ -16,13 +16,13 @@ const Rating = ({ rating }: { rating: number }) => {
       {[...Array(emptyStars)].map((_, index) => (
         <Star key={index} className="w-5 h-5 text-fuchsia-600 me-1" />
       ))}
-      <p className="ms-1 text-sm font-medium text-gray-600 dark:text-gray-400">
+      <p className="ms-1 text-[15px] font-medium text-gray-600 dark:text-gray-400">
         {rating.toFixed(2)}
       </p>
-      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+      <p className="ms-1text-[15px] font-medium ms-1 text-gray-500 dark:text-gray-400">
         out of
       </p>
-      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+      <p className="ms-1 text-[15px] font-medium text-gray-500 dark:text-gray-400">
         {maxRating}
       </p>
     </div>

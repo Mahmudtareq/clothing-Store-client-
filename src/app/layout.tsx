@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavbarHome from "@/components/shared/NavbarHome";
 import FooterHome from "@/components/shared/footer/FooterHome";
+import { ThemeProvider } from "@/components/themes/ThemeProvider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,9 +23,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(fontSans.variable)}>
-        <NavbarHome />
-        <main className="min-h-screen overflow-hidden">{children}</main>
-        <FooterHome />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {" "}
+          <NavbarHome />
+          <main className="min-h-screen overflow-hidden">{children}</main>
+          <FooterHome />
+        </ThemeProvider>
       </body>
     </html>
   );

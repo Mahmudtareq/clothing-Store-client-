@@ -2,6 +2,7 @@ import Image from "next/image";
 import image from "../../../public/apple.png";
 import { TFlashSaleItem } from "@/types/ProductsTypes";
 import React from "react";
+import Link from "next/link";
 interface PopularSaleCardProps {
   popularItem: TFlashSaleItem;
 }
@@ -9,13 +10,19 @@ interface PopularSaleCardProps {
 const PopularProductsCard: React.FC<PopularSaleCardProps> = ({
   popularItem,
 }) => {
-  const { name, price, rating } = popularItem;
+  const { name, price, rating, images } = popularItem;
   return (
     <div>
-      <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative">
-        <a href="#">
-          <Image className="p-8 rounded-t-lg" src={image} alt="product image" />
-        </a>
+      <div className="w-full lg:h-[380px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative">
+        <Link href="#">
+          <Image
+            className="p-2 rounded-t-lg h-[250px] w-full"
+            src={images}
+            alt="product image"
+            width={500}
+            height={250}
+          />
+        </Link>
         <span className="absolute top-2 left-2 bg-blue-100 text-blue-800 text-xs font-semibold dark:bg-blue-200 dark:text-blue-800 ms-3 px-3 py-1 rounded-full">
           {rating}
         </span>
@@ -26,7 +33,7 @@ const PopularProductsCard: React.FC<PopularSaleCardProps> = ({
             </h5>
           </a>
           <div className="flex items-center justify-between my-3">
-            <span className="text-3xl font-bold text-gray-900 dark:text-white">
+            <span className="text-xl font-bold text-gray-900 dark:text-white">
               ${price}
             </span>
             <a

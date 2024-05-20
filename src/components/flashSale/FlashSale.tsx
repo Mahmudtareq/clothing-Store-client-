@@ -5,12 +5,16 @@ import { ArrowRightFromLine } from "lucide-react";
 import FlaseSaleCard from "./FlaseSaleCard";
 import { getProductsMensData } from "@/data/mensProducts";
 import { TFlashSaleItem } from "@/types/ProductsTypes";
+import FlashSaleTimer from "../timer/FlashSaleTimer";
+import { getAllProductsData } from "@/utils/products";
 
 const FlashSale = async () => {
-  const data: TFlashSaleItem[] = await getProductsMensData();
-  const MenWithFlashSale: TFlashSaleItem[] = data.filter(
-    (item) => item.flashSale === true
-  );
+  // const data: TFlashSaleItem[] = await getProductsMensData();
+  // const MenWithFlashSale: TFlashSaleItem[] = data.filter(
+  //   (item) => item.flashSale === true
+  // );
+  const products: TFlashSaleItem[] = await getAllProductsData();
+  const flashSale = products.filter((item) => item.flashSale === true);
   return (
     <div className="mt-[3.5rem]">
       <div className="flex items-center justify-between my-5">
@@ -25,9 +29,12 @@ const FlashSale = async () => {
           </span>
         </Button>
       </div>
+      <div>
+        <FlashSaleTimer />
+      </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
-        {MenWithFlashSale.slice(2, 6).map((flashItem) => (
-          <FlaseSaleCard key={flashItem.id} flashItem={flashItem} />
+        {flashSale.slice(1,5).map((flashItem) => (
+          <FlaseSaleCard key={flashItem._id} flashItem={flashItem} />
         ))}
       </div>
     </div>
