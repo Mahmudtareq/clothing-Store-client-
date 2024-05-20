@@ -10,7 +10,6 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-  console.log(pathname);
 
   const handleToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,7 +25,7 @@ const Navbar = () => {
             src={logo}
             className="rounded-lg"
             alt="E-shop Logo"
-            height={50}
+            height={40}
             width={50}
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -60,8 +59,8 @@ const Navbar = () => {
                 href="/"
                 className={`${
                   pathname === "/"
-                    ? "text-blue-700"
-                    : "block py-2 px-3 md:p-0 text-gray-900  rounded md:bg-transparent  md:dark:bg-transparent"
+                    ? "text-blue-700 dark:text-white"
+                    : "block py-2 px-3 md:p-0 text-gray-900 dark:text-white  rounded md:bg-transparent  md:dark:bg-transparent"
                 } `}
                 aria-current="page"
               >
@@ -73,8 +72,8 @@ const Navbar = () => {
                 href="/products"
                 className={`${
                   pathname === "/products"
-                    ? "text-blue-700"
-                    : "block py-2 px-3 md:p-0 text-gray-900  rounded md:bg-transparent  md:dark:bg-transparent"
+                    ? "text-blue-700 dark:text-white"
+                    : "block py-2 px-3 md:p-0 text-gray-900 dark:text-white  rounded md:bg-transparent  md:dark:bg-transparent"
                 } `}
               >
                 Products
@@ -83,9 +82,25 @@ const Navbar = () => {
             <li>
               <Link
                 href="/login"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`${
+                  pathname === "/login"
+                    ? "text-blue-700 dark:text-white"
+                    : "block py-2 px-3 md:p-0 text-gray-900 dark:text-white  rounded md:bg-transparent  md:dark:bg-transparent"
+                } `}
               >
                 Login
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/dashboard"
+                className={`${
+                  pathname === "/dashboard"
+                    ? "text-blue-700 dark:text-white"
+                    : "block py-2 px-3 md:p-0 text-gray-900 dark:text-white  rounded md:bg-transparent  md:dark:bg-transparent"
+                } `}
+              >
+                Dashboard
               </Link>
             </li>
           </ul>

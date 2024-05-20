@@ -1,16 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import AllProductscard from "@/components/allProducts/AllProductscard";
 import Brandname from "@/components/productsFilter/BrandName";
 import PriceRange from "@/components/productsFilter/PriceRange";
 import RatingFilter from "@/components/productsFilter/RatingFilter";
-import { getProductsMensData } from "@/data/mensProducts";
 import { TFlashSaleItem } from "@/types/ProductsTypes";
 import { getAllProductsData } from "@/utils/products";
 import React from "react";
 
 const AllProductsPage = async () => {
-  // const data: TFlashSaleItem[] = await getProductsMensData();
+ 
   const products: TFlashSaleItem[] = await getAllProductsData();
   let totalItem = products.length;
 

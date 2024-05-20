@@ -33,7 +33,7 @@ const FlashSale = async () => {
         <FlashSaleTimer />
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
-        {flashSale.slice(1,5).map((flashItem) => (
+        {flashSale.slice(1, 5).map((flashItem) => (
           <FlaseSaleCard key={flashItem._id} flashItem={flashItem} />
         ))}
       </div>

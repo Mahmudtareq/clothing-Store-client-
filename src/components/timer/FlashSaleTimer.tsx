@@ -1,12 +1,19 @@
-'use client'
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from "react";
 
-const FlashSaleTimer = () => {
-  const calculateTimeLeft = () => {
-    let endTime = new Date();
+type TimeLeft = {
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+const FlashSaleTimer: React.FC = () => {
+  const calculateTimeLeft = (): TimeLeft => {
+    const endTime = new Date();
     endTime.setMinutes(endTime.getMinutes() + 30); // 30 minutes from now
-    const difference = endTime - new Date();
+    const now = new Date().getTime(); // Current time in milliseconds
+    const difference = endTime.getTime() - now; // Difference in milliseconds
 
     if (difference <= 0) {
       return { hours: 0, minutes: 0, seconds: 0 };
@@ -19,7 +26,7 @@ const FlashSaleTimer = () => {
     return { hours, minutes, seconds };
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -29,8 +36,8 @@ const FlashSaleTimer = () => {
     return () => clearInterval(timer);
   }, []); // Empty dependency array ensures the effect runs only once, on mount
 
-  const formatTime = (value) => {
-    return value < 10 ? `0${value}` : value;
+  const formatTime = (value: number): string => {
+    return value < 10 ? `0${value}` : value.toString();
   };
 
   return (
@@ -43,6 +50,3 @@ const FlashSaleTimer = () => {
 };
 
 export default FlashSaleTimer;
-
-
-
