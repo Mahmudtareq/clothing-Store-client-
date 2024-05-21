@@ -4,20 +4,6 @@ import CarouselControls from "./CarouselControls";
 import CarouselIndicator from "./CarouselIndicator";
 import CarouselItem from "./CarouselItem";
 
-
-interface CarouselItemProps {
-  item: {
-    src: string | null;
-    alt: string;
-    title: string;
-    description: string;
-    buttonLabel: string;
-    buttonLink: string;
-    offerText: string;
-  };
-  isActive: boolean;
-}
-
 const HeroBanner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
@@ -27,7 +13,7 @@ const HeroBanner = () => {
       title: "Special Offer",
       description: "Shop now and get up to 50% off!",
       buttonLabel: "Shop Now",
-      buttonLink: "/shop",
+      buttonLink: "/products",
       offerText: "Limited time offer",
     },
     {

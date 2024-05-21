@@ -7,10 +7,14 @@ import { TFlashSaleItem } from "@/types/ProductsTypes";
 import { getAllProductsData } from "@/utils/products";
 import React from "react";
 
-const AllProductsPage = async () => {
- 
+const AllProductsPage = async ({ searchParams }: any) => {
+  const brand = searchParams?.brand || null;
   const products: TFlashSaleItem[] = await getAllProductsData();
-  let totalItem = products.length;
+  const filteredProducts = brand
+    ? products.filter((product) => product.brand === brand)
+    : products;
+
+  const totalItem = filteredProducts.length;
 
   return (
     <div className="container mx-auto lg:px-14 my-4">
@@ -40,7 +44,7 @@ const AllProductsPage = async () => {
             </p>
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
-            {products.map((popularItem) => (
+            {filteredProducts.map((popularItem) => (
               <AllProductscard key={popularItem._id} allItems={popularItem} />
             ))}
           </div>

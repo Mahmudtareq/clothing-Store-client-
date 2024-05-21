@@ -1,50 +1,23 @@
-"use client";
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect, useState } from "react";
 
-type TimeLeft = {
-  hours: number;
-  minutes: number;
-  seconds: number;
-};
+import CountdownTimer from "./CountdownTimer";
 
-const FlashSaleTimer: React.FC = () => {
-  const calculateTimeLeft = (): TimeLeft => {
-    const endTime = new Date();
-    endTime.setMinutes(endTime.getMinutes() + 30); // 30 minutes from now
-    const now = new Date().getTime(); // Current time in milliseconds
-    const difference = endTime.getTime() - now; // Difference in milliseconds
-
-    if (difference <= 0) {
-      return { hours: 0, minutes: 0, seconds: 0 };
-    }
-
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((difference / (1000 * 60)) % 60);
-    const seconds = Math.floor((difference / 1000) % 60);
-
-    return { hours, minutes, seconds };
-  };
-
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []); // Empty dependency array ensures the effect runs only once, on mount
-
-  const formatTime = (value: number): string => {
-    return value < 10 ? `0${value}` : value.toString();
-  };
-
+const FlashSaleTimer = () => {
+  const THREE_DAYS_IN_MS = 1 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+  const dateTimeAfterOnedays = NOW_IN_MS + THREE_DAYS_IN_MS;
   return (
     <div>
-      {`${formatTime(timeLeft.hours)} hr : ${formatTime(
-        timeLeft.minutes
-      )} min : ${formatTime(timeLeft.seconds)} sec`}
+      <div className="my-3">
+        <h4 className="font-medium text-zinc-700 text-lg">
+          Don't Miss Out! Our Flash Sale Ends in Just One Day!
+        </h4>
+        <p className="text-justify font-normal">
+          Hurry up and grab your favorite items at unbeatable prices before the
+          clock runs out. This is your last chance to save big!
+        </p>
+      </div>
+      <CountdownTimer targetDate={dateTimeAfterOnedays} />
     </div>
   );
 };

@@ -31,9 +31,13 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ item, isActive }) => {
         height="250"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <h2 className="text-dark text-3xl font-bold mb-4">{item.title}</h2>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-          <Link href={item.buttonLink}>{item.buttonLabel}</Link>
+        <h2 className="text-dark text-3xl font-bold mb-2">{item.title}</h2>
+        <h2 className="text-dark lg:text-xl text-md font-bold mb-2">{item.description}</h2>
+        <span className="text-dark lg:text-xl text-md font-semibold mb-4">
+          {item.offerText}
+        </span>
+        <button className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2">
+          <Link href="/products">{item.buttonLabel}</Link>
         </button>
       </div>
     </div>
