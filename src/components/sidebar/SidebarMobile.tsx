@@ -1,19 +1,31 @@
 "use client";
-import { Home, LineChart, Package, Package2, Plus } from "lucide-react";
+import { Home, LayoutList, LineChart, Package, Package2, Plus } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo from "../../asserts/logo1.jpeg";
 
 const SidebarMobile = () => {
   const pathname = usePathname();
   return (
     <nav className="grid gap-6 text-lg font-medium">
-      <Link
-        href="#"
-        className="group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base"
-      >
-        <Package2 className="h-5 w-5 transition-all group-hover:scale-110" />
-        <span className="sr-only">Acme Inc</span>
-      </Link>
+      <div className="">
+        <Link
+          href="/"
+          className="flex items-center space-x-2 rtl:space-x-reverse"
+        >
+          <Image
+            src={logo}
+            className="rounded-lg"
+            alt="E-shop Logo"
+            height={40}
+            width={40}
+          />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            E-Shop
+          </span>
+        </Link>
+      </div>
       <Link
         href="/dashboard"
         className={` ${
@@ -24,19 +36,11 @@ const SidebarMobile = () => {
         Dashboard
       </Link>
       <Link
-        href="/dashboard/supplies"
+        href="dashboard/all-products"
         className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
       >
-        <Package className="h-5 w-5" />
-        Supplies
-      </Link>
-
-      <Link
-        href="/dashboard/create-supply"
-        className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-      >
-        <Plus className="h-5 w-5" />
-        Create Supplies
+        <LayoutList className="h-5 w-5" />
+        All Products
       </Link>
       <Link
         href="#"

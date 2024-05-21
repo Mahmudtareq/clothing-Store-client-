@@ -1,5 +1,5 @@
 "use client";
-import { Home, Package, Package2, Settings } from "lucide-react";
+import { Home, LayoutList, Package, Package2, Settings } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import {
@@ -16,23 +16,7 @@ const SidebarDesktop = () => {
   const pathname = usePathname();
   return (
     <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
-      <nav className="flex flex-col items-center gap-4 px-2 sm:py-4">
-       
-        <Link
-          href="/"
-          className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
-        >
-          <Image
-            src={logo}
-            className="rounded-lg"
-            alt="E-shop Logo"
-            height={40}
-            width={50}
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            E-Shop
-          </span>
-        </Link>
+      <nav className="flex flex-col items-center gap-4 px-2 sm:py-4 mt-5">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild className="mb-3">
@@ -60,8 +44,7 @@ const SidebarDesktop = () => {
                     : ""
                 }`}
               >
-                <Package className="h-6 w-6" />
-
+                <LayoutList className="h-6 w-6" />
                 <span className="sr-only">All Products</span>
               </Link>
             </TooltipTrigger>
