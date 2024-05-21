@@ -43,7 +43,7 @@ const AllProductsPage = async ({ searchParams }: any) => {
               off, perfect for summer runs and gym workouts.
             </p>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-4">
             {filteredProducts.map((popularItem) => (
               <AllProductscard key={popularItem._id} allItems={popularItem} />
             ))}

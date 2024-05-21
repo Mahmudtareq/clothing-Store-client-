@@ -35,7 +35,7 @@ const HeroBanner = () => {
       offerText: "Shop now while stocks last",
     },
     {
-      src: "https://i.ibb.co/gFNch8x/banner4.jpg",
+      src: "https://i.ibb.co/0BNBy90/banner-2.jpg",
       alt: "image mens",
       title: "Flash Sale",
       description: "Hurry! Limited-time flash sale!",

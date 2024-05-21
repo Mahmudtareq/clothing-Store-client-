@@ -14,17 +14,22 @@ const PopularProducts = async () => {
   );
   return (
     <div className="mt-[3.5rem]">
-      <div className="flex items-center justify-between flex-wrap">
+      <div className="flex items-start justify-between flex-wrap">
         {" "}
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <span className="lg:text-[32px] text-[#3D3D3D] text-[24px]">
             Trending Products
           </span>
-          <p className="my-3 lg:w-1/2 w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            fringilla nunc in molestie feugiat. Nunc auctor consectetur elit,
-            quis pulvina.
-          </p>
+          <div className="flex flex-col text-justify my-3">
+            <span className="">
+              Discover the latest must-have items at E-SHOP! Our trending
+              products elevate your lifestyle with innovation and style .
+            </span>
+            <span>
+              Explore top-selling smart home assistants for effortless task
+              management!
+            </span>
+          </div>
         </div>
         <Button className="rounded-full  hover:underline cursor-pointer">
           <span className="flex items-center gap-2">
@@ -33,7 +38,7 @@ const PopularProducts = async () => {
           </span>
         </Button>
       </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4  mt-8 ">
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-4  mt-8 ">
         {mostPopular.slice(1, 9).map((popularItem) => (
           <PopularProductsCard
             key={popularItem._id}

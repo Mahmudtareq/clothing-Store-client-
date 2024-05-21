@@ -1,4 +1,16 @@
-import { FacebookIcon, FileAxis3D, GitBranchIcon, Github, GithubIcon, Linkedin, LocateOffIcon, MailIcon, PhoneCallIcon, TwitterIcon, Youtube } from "lucide-react";
+import {
+  FacebookIcon,
+  FileAxis3D,
+  GitBranchIcon,
+  Github,
+  GithubIcon,
+  Linkedin,
+  LocateOffIcon,
+  MailIcon,
+  PhoneCallIcon,
+  TwitterIcon,
+  Youtube,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,17 +21,27 @@ const Footer = () => {
         <div className="grid grid-cols-10 gap-8 sm:gap-6">
           <div className="lg:col-span-2 col-span-5">
             <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
-              Trending Products
+              CONSUMER POLICY
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-3">
                 <Link href="#" className="hover:underline">
-                  Flowbite
+                  Security
                 </Link>
               </li>
               <li className="mb-3">
                 <Link href="#" className="hover:underline">
-                  Flowbite
+                  Terms Of Use
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Privacy
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Sitemap
                 </Link>
               </li>
             </ul>
@@ -30,17 +52,17 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-3">
-                <Link href="#" className="hover:underline">
+                <Link href="/products" className="hover:underline">
                   Mens
                 </Link>
               </li>
               <li className="mb-3">
-                <Link href="#" className="hover:underline">
+                <Link href="/products" className="hover:underline">
                   Womens
                 </Link>
               </li>
               <li className="mb-3">
-                <Link href="#" className="hover:underline">
+                <Link href="/products" className="hover:underline">
                   Kids
                 </Link>
               </li>
@@ -49,44 +71,49 @@ const Footer = () => {
 
           <div className="lg:col-span-2 col-span-5">
             <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
-              About Us
+              About
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-3">
-                <Link href="#" className="hover:underline">
-                  Mens
+                <Link href="/" className="hover:underline">
+                  Contact Us
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="/" className="hover:underline">
+                  About Us
                 </Link>
               </li>
               <li className="mb-3">
                 <Link href="#" className="hover:underline">
-                  Womens
-                </Link>
-              </li>
-              <li className="mb-3">
-                <Link href="#" className="hover:underline">
-                  Kids
+                  E-shop Stories
                 </Link>
               </li>
             </ul>
           </div>
           <div className="lg:col-span-2 col-span-5">
             <h2 className="mb-5 text-sm font-bold text-gray-900 uppercase dark:text-white">
-              Contact Us
+              Help
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-3">
                 <Link href="#" className="hover:underline">
-                  Mens
+                  Payments
                 </Link>
               </li>
               <li className="mb-3">
                 <Link href="#" className="hover:underline">
-                  Womens
+                  Shipping
                 </Link>
               </li>
               <li className="mb-3">
                 <Link href="#" className="hover:underline">
-                  Kids
+                  FAQ
+                </Link>
+              </li>
+              <li className="mb-3">
+                <Link href="#" className="hover:underline">
+                  Cancellation & Returns
                 </Link>
               </li>
             </ul>

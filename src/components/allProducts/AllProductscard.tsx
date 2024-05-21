@@ -18,19 +18,23 @@ const AllProductscard: React.FC<FlaseSaleCardProps> = ({ allItems }) => {
     _id,
     flashSale,
     new: isNew,
+    brand
   } = allItems;
   return (
     <div>
       <div className="w-full lg:h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative">
-        <Link href="#">
-          <Image
-            className="p-2 rounded-t-lg h-[250px] w-full"
-            src={images}
-            alt="product image"
-            width={500}
-            height={250}
-          />
-        </Link>
+        <Image
+          className="p-2 rounded-t-lg h-[250px] w-full"
+          src={images}
+          alt={name}
+          width={500}
+          height={50}
+          sizes="100vw"
+          style={{
+            width: "100%",
+          }}
+        />
+
         <div>
           {flashSale ? (
             <Badge
@@ -53,21 +57,24 @@ const AllProductscard: React.FC<FlaseSaleCardProps> = ({ allItems }) => {
         <div className="px-5 pb-5">
           <a href="#">
             <h5 className="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-              {name}
+              {name.slice(0, 20)}
             </h5>
           </a>
-          <div className="flex items-center mt-2.5 mb-5">
+          <div className="flex items-center mt-2.5 mb-5 gap-3">
             <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ">
               {rating}
+            </span>
+            <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ">
+              {brand}
             </span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-xl font-bold text-gray-900 dark:text-white">
-              ${price}
+              ${price} <span className="line-through text-sm font-normal">15</span>
             </span>
             <Link
               href={`products/${_id}`}
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
               Details
             </Link>

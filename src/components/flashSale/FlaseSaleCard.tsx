@@ -15,9 +15,13 @@ const FlaseSaleCard: React.FC<FlaseSaleCardProps> = ({ flashItem }) => {
         <Image
           className="p-2 rounded-t-lg h-[250px] w-full"
           src={images}
-          alt="product image"
+          alt={name}
           width={500}
-          height={250}
+          height={50}
+          sizes="100vw"
+          style={{
+            width: "100%",
+          }}
         />
         <span className="absolute top-2 left-2 text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium px-2.5 text-sm py-1 rounded-full">
           {flashSalePercentage}% off
