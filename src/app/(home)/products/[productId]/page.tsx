@@ -54,7 +54,7 @@ const ProductsDetailsPage = async ({
             </h4>
             <Rating rating={products?.rating!} />
             <span className="text-xl font-extrabold mt-2 mb-3">
-              {products?.currency ? "$" : "TK"} {products?.price}
+              {products?.currency ? "$" : "TK"} {products?.price} <span className="line-through font-normal text-[14px]">15</span>
             </span>
             <p className="text-[15px] font-normal mt-2 mb-3">
               {products?.description} Go sporty this summer with this vintage

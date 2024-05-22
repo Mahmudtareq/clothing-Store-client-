@@ -1,6 +1,7 @@
 import ProductsBrands from "@/components/brands/ProductsBrands";
 import FlashSale from "@/components/flashSale/FlashSale";
 import PopularProducts from "@/components/popularProducts/PopularProducts";
+import RecentViewed from "@/components/recentlyViewed/RecentViewed";
 import HeroBanner from "@/components/shared/banner/HeroBanner";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <FlashSale />
         <ProductsBrands />
         <PopularProducts />
+        <RecentViewed />
       </div>
     </>
   );

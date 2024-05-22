@@ -22,7 +22,7 @@ const AllProductsPage = async ({ searchParams }: any) => {
         <div className="lg:col-span-3 md:col-span-6 col-span-12">
           <div className=" my-4">
             <PriceRange />
-            <Brandname />
+            {/* <Brandname /> */}
             <RatingFilter />
           </div>
         </div>
@@ -53,5 +53,6 @@ const AllProductsPage = async ({ searchParams }: any) => {
     </div>
   );
 };
+
 
 export default AllProductsPage;

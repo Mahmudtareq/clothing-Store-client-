@@ -19,7 +19,7 @@ const FlashSale = async () => {
     <div className="mt-[3.5rem]">
       <div className="flex items-center justify-between my-5">
         {" "}
-        <span className="lg:text-[32px] text-[#3D3D3D] text-[24px]">
+        <span className="lg:text-[32px] text-[#3D3D3D] text-[24px] dark:text-white">
           Flash Sale
         </span>
         <Button className="rounded-full  hover:underline cursor-pointer">

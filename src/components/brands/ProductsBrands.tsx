@@ -12,7 +12,7 @@ export type TBrands = {
 };
 const ProductsBrands = () => {
   return (
-    <div className="my-8">
+    <div className="my-10">
       <div className="text-center mb-5 mt-4">
         <h1 className="text-[28px] font-bold">Featured Brands</h1>
         <p className="my-2 text-[16px] font-semibold">

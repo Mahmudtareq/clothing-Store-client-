@@ -17,7 +17,7 @@ const PopularProducts = async () => {
       <div className="flex items-start justify-between flex-wrap">
         {" "}
         <div className="flex flex-col ">
-          <span className="lg:text-[32px] text-[#3D3D3D] text-[24px]">
+          <span className="lg:text-[32px] text-[#3D3D3D] text-[24px] dark:text-white">
             Trending Products
           </span>
           <div className="flex flex-col text-justify my-3">
